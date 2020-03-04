@@ -1,52 +1,111 @@
+
+@media screen and (max-width: 479px) {
+
 #container {
 
     display: grid;
 
     grid-template-areas:
-    'na na na na' 
-    'hd hd hd hd'
-    'a1 a2 a3 a4'
-    'ft ft ft ft';
+    'na' 
+    'ma'
+    'he'
+    'a1'
+    'a2'
+    'a3'
+    'a4'
+    'ft';
 
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
-    grid-template-rows: 1fr 2fr 3fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 3fr 1fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1px;
+  
 
     }
+     }
 
+body{
+margin: 0;
+
+}     
 .na {
     grid-area: na;
     display: grid;
-    background-color: aqua;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+   
 }
 
-.hd {
-    grid-area: hd;
-    display: grid;
-    background-color: burlywood;
+#bars {
+    height: 5vh;
+    width: auto;
+    cursor: pointer;
+ 
 }
+
+
+#lg {
+   width: 30vw;
+
+}
+
+.ma {
+    grid-area: ma;
+    display: grid;
+    background-image: url("../img/moln.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+
+.he {
+    grid-area: he;
+    display: grid;
+    text-align: center;
+
+}
+
 
 .a1 {
     grid-area: a1;
-    display: grid;
-    background-color: rgb(33, 87, 87);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/am.jpg);
+    
+    
 }
 .a2 {
     grid-area: a2;
-    display: grid;
-    background-color: rgb(7, 83, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../img/hiclipart.png);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+
+   
 }
 .a3 {
     grid-area: a3;
-    display: grid;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/crasch.jpg);
+    background-size: 100% 100%;
+    
 }
 .a4 {
     grid-area: a4;
     display: grid;
-    background-color: green;
+    background-color: white;
+    background-image: url(../img/funfacts.png);
+    
 }
 
 .ft {
@@ -55,3 +114,90 @@
     background-color: yellowgreen;
 
 }
+
+/* text */
+.h2 {
+    color: white;
+    margin: 10px;
+
+
+}
+.a2text {
+    color: black;
+    margin: 0;
+}
+
+.a3text {
+    margin: 4px;
+    color: white;
+
+}
+
+.buttona1 {
+    background-color: #5DBCD2; 
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 110px;
+    height: 50px;
+
+}
+
+.buttona2 {
+    background-color: #5DBCD2; 
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    margin: 3px 0 20px 0;
+
+}
+
+.buttona3 {
+    background-color: #5DBCD2; 
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 110px;
+    height: 50px;
+  
+
+
+}
+
+
+
+
+
+
+/* desktop #container {
+
+    display: grid;
+
+    grid-template-areas:
+    'na na na na' 
+    'ma ma ma ma'
+    'he he he he'
+    'a1 a2 a3 a4'
+    'ft ft ft ft';
+
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+  
+
+    } *
