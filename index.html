@@ -9,33 +9,78 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="container">
+    <div id="containerhem">
         <nav class="na">
-            <a href="index.html"><img id="lg" src="img/aeroplane1280.png" alt=""> </a>
+             <!-- <a href="index.html"><img id="lg" src="img/aeroplane1280.png" alt=""> </a>  -->
             
-            <img id="bars" src="img/bars-solid.svg" alt="">
+        <div class="menu">
+                <ul>
+                    <li>Tillverkning</li>
+                    <li>Flygplatser</li>
+                    <li>Olyckor</li>
+                    <li>Funfacts</li>
+                </ul>
+            </div>
+        
+            <div class="fade-layer"></div>
+        
+            <div class="wrapper">
+                
+                <div class="menu-button">
+                    <i class="material-icons"> <img id="bars" src="img/bars-solid.svg" alt=""> </i>
+                </div>
+        
+                 </div>
+            <script src="js/main.js"></script>
         </nav>
         <main class="ma">
+            <div></div>
+            <div class="blur"></div>
         </main>
+
         <header class="he">
-                <h1>Flygplans fakta</h1>
+            <h1 class="rubrik">Flygplans fakta</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis voluptate corporis, aliquid velit neque maiores nemo dignissimos dolorem soluta ex illum tempora natus quas iste accusamus sapiente, voluptates eaque.</p>
         </header>
+
         <article class="a1">
-            <h2 class="h2">Tillverkning</h2>
-            <p class="h2">Lorem ipsum, dolor amet consectetur adipisicing elit. </p>
-            <button class="buttona1">klicka här</button>
+            <div class="blur"></div>
+            <h2 class="a1text">Tillverkning</h2>
+            <p class="a1text">Lorem ipsum, dolor amet consectetur adipisicing elit. </p>
+            <button onclick="location.replace('flik1.html')" class="buttona1">klicka här</button>
         </article>
+
         <article class="a2">
             <h2 class="a2text">Flygplatser</h2> 
-            <button class="buttona2">klicka här</button>  
+            <button onclick="location.replace('flik2.html')" class="buttona2">klicka här</button>  
         </article>
+
         <article class="a3">
+            <div class="blur"></div>
             <h2 class="a3text">Olyckor</h2>
             <p class="a3text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> 
-            <button class="buttona3">klicka här</button> 
+            <button onclick="location.replace('flik3.html')" class="buttona3">klicka här</button> 
         </article>
-        <article class="a4"></article>
-        <footer class="ft"></footer>
+
+        <article class="a4"> 
+            <h2 class="a4text">FunFacts</h2>
+            <button onclick="location.replace('flik4.html')" class="buttona4">klicka här</button>
+         </article>
+
+        <footer class="ft">
+            <div class="blur"></div>
+            <h3>Följ oss</h3>
+        <div class="icons">
+            <img id="insta" src="img/instagram.png" alt="">
+            <img id="faceb" src="img/facebook.png" alt="">
+            <img id="twitter" src="img/twitter.png" alt="">
+        </div>
+        </footer>
+
+
+
+
+
     </div>
 </body>
 </html>

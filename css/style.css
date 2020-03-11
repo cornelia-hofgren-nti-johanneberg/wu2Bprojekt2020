@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 479px) {
 
-#container {
+#containerhem {
 
     display: grid;
 
@@ -17,59 +17,228 @@
 
     height: 200vh;
     width: 100vw;
-    grid-template-rows: 1fr 3fr 1fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr 3fr 3fr 3fr 3fr 1fr;
     grid-template-columns: 1fr;
     grid-gap: 1px;
   
 
-    }
-     }
-
-body{
-margin: 0;
-
-}     
-.na {
-    grid-area: na;
-    display: grid;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-   
 }
+
+#containerflik1 {
+   
+    display: grid;
+
+    grid-template-areas:
+    'na' 
+    'ma'
+    'he'
+    'a1'
+    'ft';
+
+    height: 120vh;
+    width: 100vw;
+    grid-template-rows: 0.5fr 4fr 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+
+}
+
+#containerflik2 {
+   
+    display: grid;
+
+    grid-template-areas:
+    'na' 
+    'ma'
+    'he'
+    'a1'
+    'ft';
+
+    height: 110vh;
+    width: 100vw;
+    grid-template-rows: 0.5fr 3fr 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+
+}
+
+
+h2 {
+    font-size: 18px;
+}
+   
+
+
+}
+
+
+ /* 🡣 allmänt 🡣 */  
+ 
+
+
+body {
+margin: 0;
+}
+
+
+
+
 
 #bars {
     height: 5vh;
     width: auto;
     cursor: pointer;
- 
+    margin: 12px;
 }
+
+body,ul{
+    margin: 0;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: grey;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+
+
+
+
+
+
+
+h3 {
+    margin: 5px;
+    color: white;
+
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    filter: invert(9)
+
+}
+#insta {
+    width: 40px;
+}
+
+#faceb {
+    width: 40px;
+}
+
+#twitter {
+    width: 40px;
+}
+
+
 
 
 #lg {
    width: 30vw;
-
 }
+
+.rubrik {
+    margin: 10px;
+}
+
+.na {
+    grid-area: na;
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 
 .ma {
     grid-area: ma;
     display: grid;
-    background-image: url("../img/moln.png");
+    position: relative;
+    background-image: url("../img/clouds2.jpg");
+    background-size: auto 100%;
+}
+.ma div {
+    background-image: url("../img/aeroplane1280.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-  
+    background-size: 100% auto;
+    background-position: -100vw 0;
+    animation: flygplan 4s infinite linear, flygplan2 0.5s infinite linear alternate;
 }
 
+@keyframes flygplan {
+    0% {background-position-x: -100vw;}
+    100% {background-position-x: 100vw;}
+}
+@keyframes flygplan2 {
+    0% {background-position-y: 5vw;}
+    100% {background-position-y: -1vw;}
+}
 .he {
     grid-area: he;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: center;
+    margin: 0;
+}
+
+.ft {
+    grid-area: ft;
+    display: grid;
+    background-image: url("../img/clouds2.jpg");
+    background-size: 100% auto;
+    background-position: 100% -58%;
+    position: relative;
 
 }
 
-
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    z-index: 1;
+}
+/* 🡣 article 1-4 🡣 */
 .a1 {
     grid-area: a1;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,6 +249,7 @@ margin: 0;
 }
 .a2 {
     grid-area: a2;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -93,32 +263,35 @@ margin: 0;
 .a3 {
     grid-area: a3;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(../img/crasch.jpg);
     background-size: 100% 100%;
-    
 }
 .a4 {
     grid-area: a4;
-    display: grid;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     background-image: url(../img/funfacts.png);
-    
+    background-position: 73% 56%;
+    background-size: 76% auto;
+    background-repeat: no-repeat;
 }
 
-.ft {
-    grid-area: ft;
-    display: grid;
-    background-color: yellowgreen;
 
-}
 
-/* text */
-.h2 {
+/* 🡣 article text 1-4 🡣 */
+
+.a1text {
     color: white;
     margin: 10px;
+    z-index: 2;
 
 
 }
@@ -130,8 +303,18 @@ margin: 0;
 .a3text {
     margin: 4px;
     color: white;
+    z-index: 2;
 
 }
+
+.a4text {
+    color: black;
+    margin: 0;
+}
+
+
+
+/* 🡣 article buttons 1-4 🡣 */
 
 .buttona1 {
     background-color: #5DBCD2; 
@@ -144,19 +327,21 @@ margin: 0;
     border-radius: 10px;
     width: 110px;
     height: 50px;
+    z-index: 2;
 
 }
 
 .buttona2 {
-    background-color: #5DBCD2; 
+    background-color: black; 
     border: none;
     color: white;
     padding: 10px 12px;
+    text-align: center;
     display: inline-block;
     font-size: 14px;
     border-radius: 10px;
     width: 90px;
-    height: 30px;
+    height: 40px;
     margin: 3px 0 20px 0;
 
 }
@@ -172,14 +357,52 @@ margin: 0;
     border-radius: 10px;
     width: 110px;
     height: 50px;
-  
+    z-index: 2;
 
+}
+
+.buttona4 {
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    margin: 0px 0 15px 0;
 
 }
 
 
+ /* flik1 */
+ .ma1 {
+    grid-area: ma;
+    display: grid;
+    background-image: url("../img/am.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
+ }
 
+ #flik1a {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+ }
+
+/* flik1 */
+.ma2 {
+    grid-area: ma;
+    display: grid;
+    background-image: url("../img/hiclipart.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
 
 
 /* desktop #container {
