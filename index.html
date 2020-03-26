@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="containerhem">
@@ -14,12 +15,16 @@
              <!-- <a href="index.html"><img id="lg" src="img/aeroplane1280.png" alt=""> </a>  -->
             
         <div class="menu">
-                <ul>
+                <!-- <ul>
                     <li>Tillverkning</li>
                     <li>Flygplatser</li>
                     <li>Olyckor</li>
                     <li>Funfacts</li>
-                </ul>
+                </ul> -->
+                <article id="flik1"><h2>Tillverkning</h2></article>
+                <article id="flik2"><h2>Flygplatser</h2></article>
+                <article id="flik3"><h2>Olyckor</h2></article>
+                <article id="flik4"><h2>Funfacts</h2></article>
             </div>
         
             <div class="fade-layer"></div>
@@ -27,7 +32,7 @@
             <div class="wrapper">
                 
                 <div class="menu-button">
-                    <i class="material-icons"> <img id="bars" src="img/bars-solid.svg" alt=""> </i>
+                    <i class="material-icons"> <img id="bars" src="img/bars-solid.svg" alt="meny"> </i>
                 </div>
         
                  </div>
@@ -45,35 +50,35 @@
 
         <article class="a1">
             <div class="blur"></div>
-            <h2 class="a1text">Tillverkning</h2>
-            <p class="a1text">Lorem ipsum, dolor amet consectetur adipisicing elit. </p>
+            <h2 class="a13text">Tillverkning</h2>
+            <p class="a13text">Här kan du läsa om hur tillverkningen går till </p>
             <button onclick="location.replace('flik1.html')" class="buttona1">klicka här</button>
         </article>
 
         <article class="a2">
-            <h2 class="a2text">Flygplatser</h2> 
+            <h2 class="a24text">Flygplatser</h2> 
             <button onclick="location.replace('flik2.html')" class="buttona2">klicka här</button>  
         </article>
 
         <article class="a3">
             <div class="blur"></div>
-            <h2 class="a3text">Olyckor</h2>
-            <p class="a3text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> 
+            <h2 class="a13text">Olyckor</h2>
+            <p class="a13text">Här kan du läsa om kända olyckor som inträffat</p> 
             <button onclick="location.replace('flik3.html')" class="buttona3">klicka här</button> 
         </article>
 
         <article class="a4"> 
-            <h2 class="a4text">FunFacts</h2>
+            <h2 class="a24text">FunFacts</h2>
             <button onclick="location.replace('flik4.html')" class="buttona4">klicka här</button>
          </article>
 
         <footer class="ft">
             <div class="blur"></div>
-            <h3>Följ oss</h3>
+            <h3 id="fo" >Följ oss</h3>
         <div class="icons">
-            <img id="insta" src="img/instagram.png" alt="">
-            <img id="faceb" src="img/facebook.png" alt="">
-            <img id="twitter" src="img/twitter.png" alt="">
+            <img id="insta" src="img/instagram.png" alt="instagramsymbol">
+            <img id="faceb" src="img/facebook.png" alt="facebooksymbol">
+            <img id="twitter" src="img/twitter.png" alt="twittersymbol">
         </div>
         </footer>
 

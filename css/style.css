@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 415px) {
 
 #containerhem {
 
@@ -17,11 +17,72 @@
 
     height: 200vh;
     width: 100vw;
-    grid-template-rows: 0.5fr 3fr 0.5fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr 3fr 3fr 3fr 3fr 0.5fr;
     grid-template-columns: 1fr;
     grid-gap: 1px;
   
 
+}
+
+
+    font-size: 18px;
+}
+
+
+}
+
+.menu{
+    height: 40vh;
+    width: 30vw;
+    background: grey;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+    
+}
+
+.show{
+    left: 0;
+
+}
+/* 🡣 animation 🡣 */ 
+
+.ma {
+    grid-area: ma;
+    display: grid;
+    position: relative;
+    background-image: url("../img/clouds2.jpg");
+    background-size: auto 100%;
+    
+}
+.ma div {
+    background-image: url("../img/aeroplane1280.png");
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    background-position: -100vw 0;
+    animation: flygplan 4s infinite linear, flygplan2 0.5s infinite linear alternate;
+}
+
+@keyframes flygplan {
+    0% {background-position-x: -100vw;}
+    100% {background-position-x: 100vw;}
+}
+@keyframes flygplan2 {
+    0% {background-position-y: 5vw;}
+    100% {background-position-y: -1vw;}
+}
+
+#bars {
+    height: 5vh;
+    width: auto;
+    cursor: pointer;
+    margin: 12px;
+    width: 27px;
+    height: auto;
+    cursor: pointer;
 }
 
 #containerflik1 {
@@ -35,7 +96,7 @@
     'a1'
     'ft';
 
-    height: 120vh;
+    height: 130vh;
     width: 100vw;
     grid-template-rows: 0.5fr 4fr 1fr 6fr 1fr;
     grid-template-columns: 1fr;
@@ -54,7 +115,7 @@
     'a1'
     'ft';
 
-    height: 110vh;
+    height: 120vh;
     width: 100vw;
     grid-template-rows: 0.5fr 3fr 1fr 6fr 1fr;
     grid-template-columns: 1fr;
@@ -62,14 +123,214 @@
 
 }
 
-
-h2 {
-    font-size: 18px;
-}
+#containerflik3 {
    
+    display: grid;
 
+    grid-template-areas:
+    'na' 
+    'ma'
+    'he'
+    'a1'
+    'ft';
+
+    height: 120vh;
+    width: 100vw;
+    grid-template-rows: 0.5fr 4fr 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
 
 }
+
+#containerflik4 {
+   
+    display: grid;
+
+    grid-template-areas:
+    'na' 
+    'ma'
+    'he'
+    'a1'
+    'ft';
+
+    height: 120vh;
+    width: 100vw;
+    grid-template-rows: 0.5fr 4fr 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+
+}
+
+.ma4 {
+    grid-area: ma;
+    display: grid;
+    background-image: url("../img/funfacts.png");
+    background-repeat: no-repeat;
+    background-size: 65% auto;
+    background-position: 60% 50%;
+
+}
+
+@media screen and (min-width: 950px) {
+
+
+
+    #containerhem {
+    
+        display: grid;
+    
+        grid-template-areas:
+        'na na na na' 
+        'ma ma ma ma'
+        'he he he he'
+        'a1 a2 a3 a4'
+        'ft ft ft ft';
+    
+        height: 100vh;
+        width: 100vw;
+        grid-template-rows: 1fr 3fr 1fr 3fr 0.5fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1px;
+      
+        }
+
+        #containerflik1 {
+   
+            display: grid;
+        
+            grid-template-areas:
+            'na' 
+            'ma'
+            'he'
+            'a1'
+            'ft';
+        
+            height: 130vh;
+            width: 100vw;
+            grid-template-rows: 0.5fr 17fr 1fr 6fr 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 1px;
+        
+        }
+
+        
+        #containerflik2 {
+        
+            display: grid;
+
+            grid-template-areas:
+            'na' 
+            'ma'
+            'he'
+            'a1'
+            'ft';
+
+            height: 130vh;
+            width: 100vw;
+            grid-template-rows: 0.5fr 30fr 1fr 6fr 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 1px;
+        }
+
+        #containerflik3 {
+   
+          display: grid;
+
+            grid-template-areas:
+            'na' 
+            'ma'
+            'he'
+            'a1'
+            'ft';
+
+            height: 120vh;
+            width: 100vw;
+            grid-template-rows: 0.5fr 20fr 1fr 6fr 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 1px;
+
+        }
+
+        #containerflik4 {
+   
+        display: grid;
+
+        grid-template-areas:
+        'na' 
+        'ma'
+        'he'
+        'a1'
+        'ft';
+
+        height: 120vh;
+        width: 100vw;
+        grid-template-rows: 0.5fr 20fr 1fr 6fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 1px;
+
+        }
+
+        .ma4 {
+            grid-area: ma;
+            display: grid;
+            background-image: url("../img/funfacts.png");
+            background-repeat: no-repeat;
+            background-size: 30% auto;
+            background-position: 54% 50%;
+        
+        }
+
+        .ma {
+            grid-area: ma;
+            display: grid;
+            position: relative;
+            background-image: url("../img/clouds2.jpg");
+            background-size: auto 430%;
+        
+        }
+        .ma div {
+            background-image: url("../img/aeroplane1280.png");
+            background-repeat: no-repeat;
+            background-size: 23% auto;
+            background-position: -100vw 0;
+            animation: flygplan 8s infinite linear, flygplan2 0.5s infinite linear alternate;
+        }
+        
+        @keyframes flygplan {
+            0% {background-position-x: -50vw;}
+            100% {background-position-x: 100vw;}
+        }
+        @keyframes flygplan2 {
+            0% {background-position-y: 2vw;}
+            100% {background-position-y: 1vw;}
+        }
+
+
+
+        .show{
+            left: 50%;
+            transform: translateX(-50%) translateY(50%);
+        }
+        
+        #bars {
+            height: 5vh;
+            width: auto;
+            cursor: pointer;
+            margin: 12px;
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+        }
+
+ }
+
+
+
+ 
+
+
+
+ 
 
 
  /* 🡣 allmänt 🡣 */  
@@ -84,27 +345,23 @@ margin: 0;
 
 
 
-#bars {
-    height: 5vh;
-    width: auto;
-    cursor: pointer;
-    margin: 12px;
-}
 
 body,ul{
     margin: 0;
 }
 
-.menu{
-    height: 100vh;
-    width: 80vw;
-    background: grey;
-    position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
+
+.menu article {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.menu article h2 {
+    margin: auto;
 }
 
 .menu-button{
@@ -116,9 +373,6 @@ body,ul{
     font-size: 2.5rem;
 }
 
-.show{
-    left: 0;
-}
 
 .fade-layer{
     position: fixed;
@@ -140,10 +394,8 @@ body,ul{
 
 
 
-
-
-h3 {
-    margin: 5px;
+#fo {
+    margin: 1px;
     color: white;
 
 }
@@ -186,29 +438,6 @@ h3 {
 }
 
 
-.ma {
-    grid-area: ma;
-    display: grid;
-    position: relative;
-    background-image: url("../img/clouds2.jpg");
-    background-size: auto 100%;
-}
-.ma div {
-    background-image: url("../img/aeroplane1280.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: -100vw 0;
-    animation: flygplan 4s infinite linear, flygplan2 0.5s infinite linear alternate;
-}
-
-@keyframes flygplan {
-    0% {background-position-x: -100vw;}
-    100% {background-position-x: 100vw;}
-}
-@keyframes flygplan2 {
-    0% {background-position-y: 5vw;}
-    100% {background-position-y: -1vw;}
-}
 .he {
     grid-area: he;
     display: flex;
@@ -221,9 +450,9 @@ h3 {
 .ft {
     grid-area: ft;
     display: grid;
-    background-image: url("../img/clouds2.jpg");
+    background-image: url("../img/airplaneFT.jpg");
     background-size: 100% auto;
-    background-position: 100% -58%;
+    background-position: 100% -40%;
     position: relative;
 
 }
@@ -243,7 +472,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/am.jpg);
+    background-image: url("../img/am.jpg");
+    padding: 15px;
     
     
 }
@@ -254,7 +484,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-image: url(../img/hiclipart.png);
+    background-image: url("../img/hiclipart.png");
     background-size: 100% 90%;
     background-repeat: no-repeat;
 
@@ -267,8 +497,10 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/crasch.jpg);
+    background-image: url("../img/crasch.jpg");
     background-size: 100% 100%;
+    padding: 19px;
+   
 }
 .a4 {
     grid-area: a4;
@@ -278,7 +510,7 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: white;
-    background-image: url(../img/funfacts.png);
+    background-image: url("../img/funfacts.png");
     background-position: 73% 56%;
     background-size: 76% auto;
     background-repeat: no-repeat;
@@ -288,29 +520,19 @@ h3 {
 
 /* 🡣 article text 1-4 🡣 */
 
-.a1text {
+.a13text {
     color: white;
-    margin: 10px;
-    z-index: 2;
-
-
-}
-.a2text {
-    color: black;
-    margin: 0;
-}
-
-.a3text {
     margin: 4px;
-    color: white;
     z-index: 2;
 
-}
 
-.a4text {
+
+}
+.a24text {
     color: black;
     margin: 0;
 }
+
 
 
 
@@ -328,6 +550,8 @@ h3 {
     width: 110px;
     height: 50px;
     z-index: 2;
+    margin: 10px;
+    cursor: pointer;
 
 }
 
@@ -358,6 +582,7 @@ h3 {
     width: 110px;
     height: 50px;
     z-index: 2;
+    margin: 10px;
 
 }
 
@@ -394,7 +619,7 @@ h3 {
 
  }
 
-/* flik1 */
+/* flik main */
 .ma2 {
     grid-area: ma;
     display: grid;
@@ -403,24 +628,26 @@ h3 {
     background-size: 100% auto;
 
 }
-
-
-/* desktop #container {
-
+.ma3 {
+    grid-area: ma;
     display: grid;
+    background-image: url("../img/crasch.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
-    grid-template-areas:
-    'na na na na' 
-    'ma ma ma ma'
-    'he he he he'
-    'a1 a2 a3 a4'
-    'ft ft ft ft';
+}
 
-    height: 100vh;
-    width: 100vw;
-    grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
-  
 
-    } *
+
+
+
+
+
+.textflik {
+    margin: 11px;
+}
+
+.h3flik {
+    font-size: 15px;
+    margin: 11px;
+}

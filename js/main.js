@@ -14,3 +14,6 @@ function show() {
   
   btn.addEventListener('click',show);
   layer.addEventListener('click',show);
+
+  $(".menu article").click(function (){location.replace($(this).attr("id")+".html");});
+  
