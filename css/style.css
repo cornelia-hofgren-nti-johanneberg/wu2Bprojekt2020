@@ -25,6 +25,7 @@
 }
 
 
+h2 {
     font-size: 18px;
 }
 
@@ -55,7 +56,7 @@
     display: grid;
     position: relative;
     background-image: url("../img/clouds2.jpg");
-    background-size: auto 100%;
+    background-size: 100% 100%;
     
 }
 .ma div {
@@ -78,7 +79,6 @@
 #bars {
     height: 5vh;
     width: auto;
-    cursor: pointer;
     margin: 12px;
     width: 27px;
     height: auto;
@@ -285,13 +285,13 @@
             display: grid;
             position: relative;
             background-image: url("../img/clouds2.jpg");
-            background-size: auto 430%;
+            background-size: auto 455%;
         
         }
         .ma div {
             background-image: url("../img/aeroplane1280.png");
             background-repeat: no-repeat;
-            background-size: 23% auto;
+            background-size: 20% auto;
             background-position: -100vw 0;
             animation: flygplan 8s infinite linear, flygplan2 0.5s infinite linear alternate;
         }
@@ -315,7 +315,6 @@
         #bars {
             height: 5vh;
             width: auto;
-            cursor: pointer;
             margin: 12px;
             width: 40px;
             height: auto;
